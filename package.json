@@ -13,14 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/emmanuelnwogbo/trug-apparel.git"
   },
-  "author": "Emmanuel <emmanwogbo20@yahoo.com>",
+  "author": "Emmanuel <nerdyemmanuel@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/emmanuelnwogbo/trug-apparel/issues"
   },
   "homepage": "https://github.com/emmanuelnwogbo/trug-apparel#readme",
   "dependencies": {
-    "axios": "0.16.2",
+    "axios": "^0.19.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
@@ -29,12 +29,12 @@
     "babel-preset-es2017": "6.24.1",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-0": "6.24.1",
-    "compression": "1.7.0",
+    "compression": "^1.7.4",
     "concurrently": "3.5.0",
-    "express": "4.15.4",
+    "express": "^4.17.1",
     "express-http-proxy": "1.0.6",
-    "lodash": "4.17.4",
-    "nodemon": "1.12.0",
+    "lodash": "^4.17.15",
+    "nodemon": "^1.19.1",
     "npm-run-all": "4.1.1",
     "react": "16.0.0",
     "react-dom": "16.0.0",
@@ -45,9 +45,18 @@
     "redux": "3.7.2",
     "redux-thunk": "2.2.0",
     "serialize-javascript": "1.4.0",
-    "webpack": "3.5.6",
+    "webpack": "^4.8.3",
     "webpack-dev-server": "2.8.2",
     "webpack-merge": "4.1.0",
     "webpack-node-externals": "1.6.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.1.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.3.6"
   }
 }
