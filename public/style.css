@@ -59,13 +59,16 @@ body {
   z-index: 20; }
   @media only screen and (max-width: 64em) {
     .header {
-      background: #000000; } }
+      background: #000000;
+      padding-left: 13rem; } }
   @media only screen and (max-width: 50em) {
     .header {
-      padding: 2rem 4rem; } }
+      padding: 2rem 4rem;
+      padding-left: 11rem; } }
   @media only screen and (max-width: 38em) {
     .header {
-      padding: 2rem; } }
+      padding: 2rem;
+      padding-left: 10rem; } }
   .header::before {
     top: 0;
     position: absolute;
@@ -114,6 +117,14 @@ body {
           height: 2.5rem;
           width: 2.5rem;
           fill: #fff; }
+          @media only screen and (max-width: 64em) {
+            .header__top--user-item svg {
+              height: 4rem;
+              width: 4rem; } }
+          @media only screen and (max-width: 20em) {
+            .header__top--user-item svg {
+              height: 3rem;
+              width: 3rem; } }
   .header__menu {
     display: flex;
     align-items: center;
@@ -135,7 +146,7 @@ body {
 
 .jumbotron {
   position: relative;
-  height: 68rem;
+  height: 69rem;
   margin-top: 11rem;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
@@ -269,7 +280,8 @@ body {
     z-index: 4; }
   .jumbotron__fig {
     overflow: hidden;
-    transform: translateY(8rem); }
+    transform: translateY(9rem);
+    background: #dfe6e9; }
     @media only screen and (max-width: 64em) {
       .jumbotron__fig {
         display: none; } }
@@ -388,6 +400,104 @@ body {
           height: 20%;
           font-size: 2.5rem;
           font-weight: 700; }
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  height: 100%;
+  width: 60vw;
+  background: #000000;
+  transform: translateX(-100%);
+  display: none;
+  transition: all .2s ease-in; }
+  .sidenav--overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(24, 44, 97, 0.6);
+    right: -100%; }
+  @media only screen and (max-width: 64em) {
+    .sidenav {
+      display: block; } }
+  @media only screen and (max-width: 38em) {
+    .sidenav {
+      width: 70vw; } }
+  .sidenav__btn--open {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0; }
+    @media only screen and (max-width: 38em) {
+      .sidenav__btn--open {
+        padding: 3rem 0; } }
+    @media only screen and (max-width: 38em) {
+      .sidenav__btn--open {
+        padding: 3rem 0; } }
+    @media only screen and (max-width: 26em) {
+      .sidenav__btn--open {
+        padding: 3.5rem 0; } }
+    .sidenav__btn--open span {
+      display: inline-block;
+      height: .5rem;
+      background: #fff;
+      margin: .5rem 0;
+      width: 5rem;
+      border-radius: 3rem; }
+  .sidenav__btn--close {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0; }
+    @media only screen and (max-width: 38em) {
+      .sidenav__btn--close {
+        padding: 3rem 0; } }
+    @media only screen and (max-width: 38em) {
+      .sidenav__btn--close {
+        padding: 3rem 0; } }
+    @media only screen and (max-width: 26em) {
+      .sidenav__btn--close {
+        padding: 3.5rem 0; } }
+    .sidenav__btn--close span {
+      display: inline-block;
+      height: .5rem;
+      background: #fff;
+      margin: .5rem 0;
+      width: 5rem;
+      border-radius: 3rem; }
+    .sidenav__btn--close span:nth-child(1) {
+      transform: rotate(48deg) translateX(0rem) translateY(1rem); }
+    .sidenav__btn--close span:nth-child(2) {
+      display: none; }
+    .sidenav__btn--close span:nth-child(3) {
+      transform: rotate(-47deg) translateX(0rem) translateY(-1rem); }
+  .sidenav__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0; }
+    .sidenav__menu--btn {
+      color: #fff;
+      margin: 1rem 0;
+      width: 60%;
+      padding: 1rem 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      border: .5rem solid #fff; }
+      @media only screen and (max-width: 50em) {
+        .sidenav__menu--btn {
+          width: 76%; } }
 
 
 /*# sourceMappingURL=style.css.map*/

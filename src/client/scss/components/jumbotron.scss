@@ -1,6 +1,6 @@
 .jumbotron {
   position: relative;
-  height: 68rem;
+  height: 69rem;
   margin-top: 11rem;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
@@ -164,7 +164,8 @@
 
   &__fig {
     overflow: hidden;
-    transform: translateY(8rem);
+    transform: translateY(9rem);
+    background: #dfe6e9;
 
     @media only screen and (max-width: 64em) {
       display: none;

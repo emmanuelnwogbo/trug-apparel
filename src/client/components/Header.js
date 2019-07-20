@@ -16,7 +16,9 @@ class Header extends Component {
         'Hoods',
         'Prints'
       ]
-    }
+    };
+    this.renderProfileIcons = this.renderProfileIcons.bind(this);
+    this.renderMenuItems = this.renderMenuItems.bind(this);
   }
 
   renderProfileIcons () {
