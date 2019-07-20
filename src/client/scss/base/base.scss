@@ -9,4 +9,42 @@
 html {
   box-sizing: border-box;
   font-size: 63%;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 67%;
+  }
+
+  @media only screen and (max-width: 38em) {
+    font-size: 62%;
+  }
+
+  @media only screen and (max-width: 30em) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 26em) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: 23em) {
+    font-size: 35%;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  padding: 2rem 6rem;
+  background: rgba(236, 240, 241,1.0);
+
+  @media only screen and (max-width: 85em) {
+    padding: 2rem 3rem;
+  }
+
+  @media only screen and (max-width: 70em) {
+    padding: 2rem 1rem;
+  }
+
+  @media only screen and (max-width: 64em) {
+    padding: 2rem 0;
+  }
 }

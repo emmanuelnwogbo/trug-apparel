@@ -1,0 +1,118 @@
+.header { 
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 8rem;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #fff;//#0a0918; 
+  background: rgba(236, 240, 241,1.0);
+  z-index: 20;
+
+  @media only screen and (max-width: 64em) {
+    background: #000000;
+  }
+
+  @media only screen and (max-width: 50em) {
+    padding: 2rem 4rem;
+  }
+
+  @media only screen and (max-width: 38em) {
+    padding: 2rem;
+  }
+
+  &::before {
+    top: 0;
+    position: absolute;
+    left: 0;
+    background: #000000;
+    content: '';
+    height: 57%;
+    width: 100%;
+    z-index: -1;
+  }
+
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+    @media only screen and (max-width: 64em) {
+      height: 7rem;
+      align-items: center;
+      transform: translateY(10px);
+    }
+
+    @media only screen and (max-width: 38em) {
+      height: 5rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;    
+      bottom: 42%;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background: #0a0918;
+      opacity: .1;
+    }
+
+    &--name {
+      font-size: 2rem;
+      font-weight: 700;
+      cursor: pointer;
+
+      @media only screen and (max-width: 64em) {
+        font-size: 3rem;
+      }
+    }
+
+    &--user {
+      display: flex;
+      align-items: center;
+
+      &-item { 
+        margin-left: 4rem;
+        padding: 1rem 0;
+        cursor: pointer;
+
+        & svg {
+          height: 2.5rem;
+          width: 2.5rem;
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    padding: 1rem 0;
+    transition: all .2s ease-in;
+    justify-content: center;
+
+    @media only screen and (max-width: 64em) {
+      display: none;
+    }
+
+    & span {
+      display: inline-block;
+      margin-right: 3rem;
+      transform: translateY(10px);
+      cursor: pointer;
+      color: #192a56;
+      
+      &:hover {
+        color: #ee2761;
+      }
+    }
+  }
+}
