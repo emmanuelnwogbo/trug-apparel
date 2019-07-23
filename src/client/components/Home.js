@@ -4,7 +4,8 @@ import Header from './Header';
 import Jumbotron from './Jumbotron';
 import MobileMast from './MobileMast';
 import SideNav from './SideNav';
-
+import LandingDisplay from './LandingDisplay';
+import Footer from './Footer';
 
 class Home extends Component {
   constructor(props) {
@@ -19,6 +20,8 @@ class Home extends Component {
         <SideNav />
         <Jumbotron />
         <MobileMast />
+        <LandingDisplay />
+        <Footer />
       </div>
     )
   }

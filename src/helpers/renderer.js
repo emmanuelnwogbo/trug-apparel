@@ -14,6 +14,7 @@ export default () => {
       </head>
       <body>
         <div id="root">${content}</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
         <script src="bundle.js"></script>
       </body>
     </html>

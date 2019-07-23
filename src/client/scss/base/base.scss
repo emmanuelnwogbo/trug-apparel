@@ -34,7 +34,8 @@ html {
 body {
   overflow-x: hidden;
   padding: 2rem 6rem;
-  background: rgba(236, 240, 241,1.0);
+  background: #fff;
+  padding-bottom: 0;
 
   @media only screen and (max-width: 85em) {
     padding: 2rem 3rem;

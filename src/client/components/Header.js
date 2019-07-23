@@ -6,7 +6,6 @@ class Header extends Component {
     this.state = {
       profileIcons: [
         "./imgs/sprite.svg#icon-user1",
-        "./imgs/sprite.svg#icon-heart-outlined",
         "./imgs/sprite.svg#icon-cart"
       ],
       menuLabels: [

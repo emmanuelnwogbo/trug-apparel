@@ -1,0 +1,103 @@
+.newarrivalcard {
+  width: 54.5rem;
+  margin: 0 1.5rem;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  @media only screen and (max-width: 119em) {
+    width: 45.5rem;
+  }
+
+  @media only screen and (max-width: 101em) {
+    width: 40.5rem;
+  }
+
+  @media only screen and (max-width: 92em) {
+    width: 35rem;
+  }
+
+  @media only screen and (max-width: 79em) {
+    width: 30rem;
+  }
+
+  @media only screen and (max-width: 66em) {
+    width: 27rem;
+    margin-top: 2rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    width: 54.5rem;
+  }
+
+  @media only screen and (max-width: 20em) {
+    width: 51rem;
+  }
+  
+  & figure {
+    height: 70rem;
+    width: 100%;
+    overflow: hidden;
+    //border: 2px solid #192a56;
+    //padding: 1rem;
+
+    @media only screen and (max-width: 119em) {
+      height: 54rem;
+    }
+
+    @media only screen and (max-width: 101em) {
+      height: 45rem;
+    }
+
+    @media only screen and (max-width: 92em) {
+      height: 37rem;
+    }
+
+    @media only screen and (max-width: 79em) {
+      height: 30rem;
+    }
+
+    @media only screen and (max-width: 66em) {
+      height: 23rem;
+    }
+
+    @media only screen and (max-width: 50em) {
+      height: 70rem;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__bio {
+    border: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: #192a56;
+    color: #fff;
+
+    &--text {
+      height: 3rem;
+      overflow: hidden;
+      font-size: 1.66rem;
+      margin: 1.5rem 0;
+
+      &:nth-child(2) {
+        font-weight: 700;
+      }
+
+      @media only screen and (max-width: 66em) {
+        height: 2rem;
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: 50em) {
+        height: 3.5rem;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
