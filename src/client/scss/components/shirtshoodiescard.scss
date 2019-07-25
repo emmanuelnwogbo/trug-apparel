@@ -93,6 +93,11 @@
         font-size: 1.3rem;
       }
 
+      @media only screen and (max-width: 66em) {
+        font-size: 2rem;
+        height: 3rem;
+      }
+
       @media only screen and (max-width: 50em) {
         height: 3.5rem;
         font-size: 2.5rem;

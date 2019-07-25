@@ -23,6 +23,12 @@ html {
   @media only screen and (max-width: 23em) {
     html {
       font-size: 35%; } }
+  @media only screen and (min-width: 2500px) {
+    html {
+      font-size: 75%; } }
+  @media only screen and (min-width: 2900px) {
+    html {
+      font-size: 96%; } }
 
 body {
   overflow-x: hidden;
@@ -58,6 +64,60 @@ body {
   color: #fff;
   background: #fff;
   z-index: 20; }
+  .header__dropdown {
+    position: absolute;
+    top: 45%;
+    right: 4%;
+    width: 33rem;
+    background: #fff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    border: .1px solid #000000;
+    transform: translateY(-150%);
+    transition: all .2s ease-in; }
+    .header__dropdown:hover {
+      transform: translateY(0); }
+    .header__dropdown--item {
+      display: flex;
+      width: 100%;
+      padding: 2rem;
+      position: relative;
+      cursor: pointer;
+      transition: all .1s ease-in; }
+      .header__dropdown--item-signinjoin {
+        background: #dfe6e9; }
+        .header__dropdown--item-signinjoin::after {
+          content: '';
+          position: absolute;
+          bottom: 18%;
+          left: 24%;
+          width: 2px;
+          height: 57%;
+          background: #000000;
+          opacity: .5; }
+      .header__dropdown--item-notsigninjoin {
+        transition: all .1s ease-in; }
+        .header__dropdown--item-notsigninjoin::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: #000000;
+          opacity: .3; }
+        .header__dropdown--item-notsigninjoin:hover {
+          color: #ee2761; }
+      .header__dropdown--item span {
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all .1s ease-in; }
+        .header__dropdown--item span:hover {
+          color: #ee2761; }
+      .header__dropdown--item span:nth-child(1) {
+        display: inline-block;
+        margin-right: 2rem; }
   @media only screen and (max-width: 64em) {
     .header {
       background: #000000;
@@ -114,6 +174,8 @@ body {
         margin-left: 4rem;
         padding: 1rem 0;
         cursor: pointer; }
+        .header__top--user-item:nth-child(1):hover ~ .header__dropdown {
+          transform: translateY(0); }
         .header__top--user-item svg {
           height: 2.5rem;
           width: 2.5rem;
@@ -176,7 +238,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 1rem 40rem rgba(0, 0, 0, 0.7); }
+    box-shadow: 0 1rem 40rem rgba(0, 0, 0, 0.7);
+    cursor: pointer; }
     @media only screen and (max-width: 64em) {
       .jumbotron__toppicks {
         display: none; } }
@@ -316,6 +379,99 @@ body {
       @media only screen and (max-width: 64em) {
         .jumbotron__fig img {
           display: none; } }
+
+.announcements {
+  position: relative;
+  height: 65rem;
+  display: grid;
+  /* background: red; */
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(22, 2rem);
+  overflow: hidden;
+  margin-top: 1rem;
+  grid-gap: 1rem; }
+  .announcements__slide__details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 19rem;
+    z-index: 4;
+    width: 100%;
+    color: #fff;
+    background: #ee2761;
+    backface-visibility: hidden;
+    padding: 3rem; }
+    .announcements__slide__details p:nth-child(2) {
+      opacity: .7;
+      font-weight: 700; }
+    .announcements__slide__details p:nth-child(3) {
+      position: absolute;
+      right: 0;
+      padding: 3rem;
+      font-weight: 700; }
+  .announcements__fig {
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+    cursor: pointer; }
+    .announcements__fig img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block; }
+    .announcements__fig:nth-child(1) {
+      grid-row: 1 / -1;
+      grid-column: 1 / span 9;
+      backface-visibility: hidden;
+      font-size: 2rem; }
+      @media only screen and (max-width: 64em) {
+        .announcements__fig:nth-child(1) {
+          grid-column: 1 / -1; } }
+      .announcements__fig:nth-child(1) figure {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        transition: all .2s ease-in;
+        backface-visibility: hidden; }
+      .announcements__fig:nth-child(1) img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; }
+    .announcements__fig:nth-child(2) {
+      grid-column: span 6;
+      grid-row: 1 / -1;
+      font-size: 1.3rem; }
+      @media only screen and (max-width: 64em) {
+        .announcements__fig:nth-child(2) {
+          display: none; } }
+    .announcements__fig:nth-child(3) {
+      grid-column: span 5;
+      grid-row: span 11;
+      font-size: 1.3rem; }
+      @media only screen and (max-width: 64em) {
+        .announcements__fig:nth-child(3) {
+          display: none; } }
+      .announcements__fig:nth-child(3) .announcements__slide__details {
+        height: 14rem;
+        padding: 1rem; }
+        .announcements__fig:nth-child(3) .announcements__slide__details p:nth-child(3) {
+          padding: 1rem; }
+    .announcements__fig:nth-child(4) {
+      grid-column: span 5;
+      grid-row: span 11;
+      font-size: 1.3rem; }
+      @media only screen and (max-width: 64em) {
+        .announcements__fig:nth-child(4) {
+          display: none; } }
+      .announcements__fig:nth-child(4) .announcements__slide__details {
+        height: 14rem;
+        padding: 1rem; }
+        .announcements__fig:nth-child(4) .announcements__slide__details p:nth-child(3) {
+          padding: 1rem; }
 
 .mobilemast {
   height: 70rem;
@@ -505,7 +661,9 @@ body {
   display: flex;
   flex-direction: column; }
   .landingdisplay__section {
-    width: 100%; }
+    width: 100%;
+    background: #000000;
+    margin: 1rem 0; }
     .landingdisplay__section__content {
       margin: 0 auto;
       justify-content: center;
@@ -531,14 +689,19 @@ body {
           height: 60%;
           transform: all .2s ease-in;
           text-transform: uppercase; }
+          @media only screen and (max-width: 66em) {
+            .landingdisplay__section__content--btns span {
+              font-size: 2.5rem; } }
           .landingdisplay__section__content--btns span:hover {
             background: #000000;
-            color: #fff; }
+            color: #fff;
+            border: 3px solid #fff; }
     .landingdisplay__section h1 {
       font-weight: 900;
       font-size: 3.2rem;
       margin: 4rem 0;
-      color: #2c2c54; }
+      color: #fff;
+      text-align: center; }
       @media only screen and (max-width: 64em) {
         .landingdisplay__section h1 {
           padding: 0 2rem; } }
@@ -616,6 +779,10 @@ body {
       @media only screen and (max-width: 81em) {
         .shirtshoodiescard__bio--text {
           font-size: 1.3rem; } }
+      @media only screen and (max-width: 66em) {
+        .shirtshoodiescard__bio--text {
+          font-size: 2rem;
+          height: 3rem; } }
       @media only screen and (max-width: 50em) {
         .shirtshoodiescard__bio--text {
           height: 3.5rem;
@@ -640,7 +807,7 @@ body {
       width: 30rem; } }
   @media only screen and (max-width: 66em) {
     .newarrivalcard {
-      width: 27rem;
+      width: 28rem;
       margin-top: 2rem; } }
   @media only screen and (max-width: 50em) {
     .newarrivalcard {
@@ -666,7 +833,7 @@ body {
         height: 30rem; } }
     @media only screen and (max-width: 66em) {
       .newarrivalcard figure {
-        height: 23rem; } }
+        height: 37rem; } }
     @media only screen and (max-width: 50em) {
       .newarrivalcard figure {
         height: 70rem; } }
@@ -690,8 +857,8 @@ body {
         font-weight: 700; }
       @media only screen and (max-width: 66em) {
         .newarrivalcard__bio--text {
-          height: 2rem;
-          font-size: 1.5rem; } }
+          height: 2.9rem;
+          font-size: 2rem; } }
       @media only screen and (max-width: 50em) {
         .newarrivalcard__bio--text {
           height: 3.5rem;
@@ -699,7 +866,6 @@ body {
 
 .footer {
   background: #192a56;
-  margin-top: 2rem;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -709,7 +875,7 @@ body {
   width: 100%;
   right: 0;
   height: 30rem; }
-  @media only screen and (max-width: 69em) {
+  @media only screen and (max-width: 1187px) {
     .footer {
       padding: 3rem; } }
   @media only screen and (max-width: 50em) {
@@ -737,10 +903,15 @@ body {
     font-size: 2rem; }
     .footer__bottom__socials span {
       display: inline-block;
-      margin: 0 2rem; }
+      margin: 0 2rem;
+      cursor: pointer; }
     .footer__bottom__socials svg {
       height: 4rem;
       width: 4rem; }
+      @media only screen and (max-width: 1003px) {
+        .footer__bottom__socials svg {
+          height: 3rem;
+          width: 3rem; } }
   .footer__label {
     padding: .5rem 3rem;
     text-align: center;

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Jumbotron from './Jumbotron';
 import MobileMast from './MobileMast';
+import Announcements from './Announcements';
 import SideNav from './SideNav';
 import LandingDisplay from './LandingDisplay';
 import Footer from './Footer';
@@ -20,6 +21,7 @@ class Home extends Component {
         <SideNav />
         <Jumbotron />
         <MobileMast />
+        <Announcements />
         <LandingDisplay />
         <Footer />
       </div>

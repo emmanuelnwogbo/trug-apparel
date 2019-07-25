@@ -1,20 +1,20 @@
 import React from 'react';
 
 const images = [
-  `https://res.cloudinary.com/dxlhzerlq/image/upload/q_33/v1559594290/female-actress_kr0c1r.jpg`,
-  `https://res.cloudinary.com/dxlhzerlq/image/upload/q_56/v1559594269/girl-with-hair_kaeg66.jpg`,
-  `https://res.cloudinary.com/dxlhzerlq/image/upload/q_56/v1559594352/girl-glasses_sm1hfi.jpg`,
-  `https://res.cloudinary.com/dxlhzerlq/image/upload/q_59/v1559594210/black-boy_ydtwkv.jpg`,
-  `https://res.cloudinary.com/dxlhzerlq/image/upload/q_53/v1559594251/camera-1_hqcuwp.jpg`,
-  `https://res.cloudinary.com/dxlhzerlq/image/upload/v1559594226/color-hands_hlfpvy.jpg`,
-  `https://res.cloudinary.com/dxlhzerlq/image/upload/v1559594288/clown_ouhykp.jpg`
+  "./imgs/unsplash1.jpg",
+  "./imgs/unsplash6.jpg",
+  "./imgs/unsplash11.jpg",
+  "./imgs/unsplash12.jpg",
+  "./imgs/unsplash13.jpg",
+  "./imgs/unsplash14.jpg",
+  "./imgs/unsplash15.jpg"
 ]
 
 const topPicks = [
-  `https://as1.ftcdn.net/jpg/02/23/08/12/500_F_223081216_VleXWWTzfbuaEKQa2Rw9s8UfqPJND5BY.jpg`,
-  `https://st2.depositphotos.com/3591429/6306/i/950/depositphotos_63060859-stock-photo-african-teenage-boy.jpg`,
-  `https://image.freepik.com/free-photo/portrait-pretty-african-american-boy-black-young-teen-man-white-background_8119-2169.jpg`,
+  "./imgs/shirt8.jpg",
   "./imgs/shirt6.jpg",
+  "./imgs/shirt5.jpg",
+  "./imgs/shirt4.jpg",
   "./imgs/shirt7.jpg",
 ]
 

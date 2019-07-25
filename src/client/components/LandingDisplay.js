@@ -10,7 +10,7 @@ class LandingDisplay extends Component {
     this.state = {
       //this is just for production, the arrivals will be gotten from 
       //the backend database
-      devNewArrivals: ['./imgs/shirt1.jpg', './imgs/shirt2.jpg','./imgs/shirt4.jpg'],
+      devNewArrivals: ['./imgs/img21.jpg', './imgs/img22.jpg','./imgs/shirt4.jpg'],
       devShirtsAndHoodies: ['./imgs/shirt1.jpg', './imgs/shirt2.jpg', './imgs/shirt3.jpg', './imgs/shirt4.jpg'],
 
     }
@@ -37,11 +37,11 @@ class LandingDisplay extends Component {
   render() {
     return (
       <div className={'landingdisplay'}>
-        <div className={'landingdisplay__section'}>
+        {/*<div className={'landingdisplay__section'}>
           <h1>New Arrivals</h1>
           <div className={'landingdisplay__section__content'}>{this.renderNewArrivals()}</div>
           <div className={'landingdisplay__section__content--btns'}><span>View More</span></div>
-        </div>
+    </div>*/}
         <div className={'landingdisplay__section'}>
           <h1>Recommendations for You</h1>
           <div className={'landingdisplay__section__content'}>{this.devShirtsAndHoodies()}</div>
