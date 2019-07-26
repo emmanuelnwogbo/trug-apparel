@@ -7,10 +7,10 @@
 
 html {
   box-sizing: border-box;
-  font-size: 63%; }
+  font-size: 60%; }
   @media only screen and (max-width: 64em) {
     html {
-      font-size: 67%; } }
+      font-size: 65%; } }
   @media only screen and (max-width: 38em) {
     html {
       font-size: 62%; } }
@@ -161,7 +161,7 @@ body {
       background: #0a0918;
       opacity: .1; }
     .header__top--name {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 700;
       cursor: pointer; }
       @media only screen and (max-width: 64em) {
