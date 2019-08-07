@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
 import Header from './Header';
 import HomeContent from './HomeContent';
@@ -20,7 +21,8 @@ class Home extends Component {
       <div className={'home'}>
         <Header />
         <SideNav />
-        <HomeContent />
+        <Route exact path="/" component={HomeContent} />
+        <Route exact path="/hi" component={() => 'hi'} />
         <Footer />
       </div>
     )
