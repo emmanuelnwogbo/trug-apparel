@@ -9,7 +9,7 @@
   justify-content: center;
   font-size: 1.7rem;
   font-weight: 500;
-  color: #fff;//#0a0918; 
+  color: #000000;//#0a0918; 
   background: #fff;
   z-index: 20;
 
@@ -90,7 +90,7 @@
   }
 
   @media only screen and (max-width: 64em) {
-    background: #000000;
+    //background: #000000;
     padding-left: 13rem;
   }
 
@@ -108,7 +108,7 @@
     top: 0;
     position: absolute;
     left: 0;
-    background: #000000;
+    background: #fff;
     content: '';
     height: 57%;
     width: 100%;
@@ -140,6 +140,10 @@
       height: 1.5px;
       background: #0a0918;
       opacity: .1;
+
+      @media only screen and (max-width: 64em) {
+        opacity: 0;
+      }
     }
 
     &--name {
@@ -171,7 +175,7 @@
         & svg {
           height: 2.5rem;
           width: 2.5rem;
-          fill: #fff;
+          fill: #000000;
 
           @media only screen and (max-width: 64em) {
             height: 4rem;

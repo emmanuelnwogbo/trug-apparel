@@ -1,6 +1,6 @@
 .footer {
-  background: #192a56;
-  color: #fff;
+  background: rgba(223, 228, 234, 1);
+  color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +70,8 @@
   &__label {
     padding: .5rem 3rem;
     text-align: center;
-    background: #130f40;
+    background: #000000;
+    color: #ffffff;
     font-size: 2rem;
     margin-right: 4rem;
     display: flex;

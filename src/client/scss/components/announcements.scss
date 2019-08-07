@@ -7,6 +7,7 @@
   grid-template-rows: repeat(22, 2rem);
   overflow: hidden;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   grid-gap: 1rem;
 
   &__slide {
@@ -18,8 +19,8 @@
       height: 19rem;
       z-index: 4;
       width: 100%;
-      color: #fff;
-      background: #ee2761;
+      color: #000000;
+      background: rgba(223, 228, 234,.9);
       backface-visibility: hidden;
       padding: 3rem;
 

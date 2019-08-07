@@ -5,7 +5,7 @@ import Jumbotron from './Jumbotron';
 import MobileMast from './MobileMast';
 import Announcements from './Announcements';
 import SideNav from './SideNav';
-import LandingDisplay from './LandingDisplay';
+import Display from './Display';
 import Footer from './Footer';
 
 class Home extends Component {
@@ -22,7 +22,7 @@ class Home extends Component {
         <Jumbotron />
         <MobileMast />
         <Announcements />
-        <LandingDisplay />
+        <Display />
         <Footer />
       </div>
     )
