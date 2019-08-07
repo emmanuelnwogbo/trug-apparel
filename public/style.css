@@ -911,10 +911,8 @@ body {
           height: 3rem;
           width: 3rem; } }
   .footer__label {
-    padding: .5rem 3rem;
     text-align: center;
-    background: #000000;
-    color: #ffffff;
+    color: #000000;
     font-size: 2rem;
     margin-right: 4rem;
     display: flex;

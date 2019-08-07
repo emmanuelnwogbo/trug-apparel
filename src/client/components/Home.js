@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from './Header';
+import HomeContent from './HomeContent';
 import Jumbotron from './Jumbotron';
 import MobileMast from './MobileMast';
 import Announcements from './Announcements';
@@ -19,10 +20,7 @@ class Home extends Component {
       <div className={'home'}>
         <Header />
         <SideNav />
-        <Jumbotron />
-        <MobileMast />
-        <Announcements />
-        <Display />
+        <HomeContent />
         <Footer />
       </div>
     )
