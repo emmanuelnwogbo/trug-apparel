@@ -319,7 +319,7 @@ body {
           width: 68%; } }
       .jumbotron__bottom input::placeholder {
         font-size: 2rem;
-        color: #fff; }
+        color: #000000; }
     .jumbotron__bottom span {
       background: #ee2761;
       color: #fff;
