@@ -8,6 +8,8 @@ import MobileMast from './MobileMast';
 import Announcements from './Announcements';
 import SideNav from './SideNav';
 import Display from './Display';
+
+import ProductsGrid from './ProductsGrid';
 import Footer from './Footer';
 
 class Home extends Component {
@@ -21,7 +23,7 @@ class Home extends Component {
       <div className={'home'}>
         <Header />
         <SideNav />
-        <Route exact path="/" component={HomeContent} />
+        <Route exact path="/" component={ProductsGrid/*HomeContent*/} />
         <Route exact path="/hi" component={() => 'hi'} />
         <Footer />
       </div>
