@@ -709,7 +709,6 @@ body {
 
 .productgrid {
   position: relative;
-  margin-top: 10rem;
   padding: 5rem 0;
   display: flex;
   margin: 0 auto;
@@ -814,6 +813,153 @@ body {
         opacity: 4; }
       .productgrid__card--details-price {
         font-weight: 700; }
+
+.productpage {
+  position: relative;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10rem; }
+  .productpage__top {
+    display: flex; }
+    @media only screen and (max-width: 64em) {
+      .productpage__top {
+        flex-direction: column; } }
+    .productpage__top__photos {
+      display: flex;
+      flex-direction: column;
+      margin-right: 2rem; }
+      @media only screen and (max-width: 64em) {
+        .productpage__top__photos {
+          flex-direction: initial; } }
+      .productpage__top__photos figure {
+        cursor: pointer;
+        height: 10rem;
+        width: 10rem;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        border-radius: .5rem;
+        transition: all ease-in-out .1s; }
+        .productpage__top__photos figure img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block; }
+      .productpage__top__photos--notcurrent {
+        border: 1px solid transparent; }
+      .productpage__top__photos--current {
+        border: 1px solid #ee2761; }
+    .productpage__top__display {
+      position: relative;
+      height: 85rem;
+      width: 70rem;
+      overflow: hidden;
+      margin-right: 2rem; }
+      @media only screen and (max-width: 77em) {
+        .productpage__top__display {
+          height: 80rem;
+          width: 60rem; } }
+      @media only screen and (max-width: 71em) {
+        .productpage__top__display {
+          height: 70rem;
+          width: 50rem; } }
+      @media only screen and (max-width: 64em) {
+        .productpage__top__display {
+          width: 80vw; } }
+      @media only screen and (max-width: 37.5em) {
+        .productpage__top__display {
+          width: 90vw;
+          height: 60rem; } }
+      @media only screen and (max-width: 30em) {
+        .productpage__top__display {
+          height: 50rem; } }
+      .productpage__top__display figure {
+        height: 100%;
+        width: 100%;
+        overflow: hidden; }
+        .productpage__top__display figure img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block; }
+    .productpage__top__details {
+      background: rgba(236, 240, 241, 0.4);
+      padding: 2rem;
+      width: 55rem; }
+      @media only screen and (max-width: 86em) {
+        .productpage__top__details {
+          height: 70rem;
+          width: 40rem; } }
+      @media only screen and (max-width: 66.5em) {
+        .productpage__top__details {
+          height: 70rem;
+          width: 35rem; } }
+      @media only screen and (max-width: 64em) {
+        .productpage__top__details {
+          width: 80vw;
+          margin-top: 1rem;
+          height: 40rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .productpage__top__details {
+          width: 90vw; } }
+      .productpage__top__details h2 {
+        font-size: 2.55rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        overflow: hidden; }
+      .productpage__top__details--price {
+        font-size: 2.33rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+        color: #555; }
+      .productpage__top__details__sizes {
+        margin-bottom: 2rem; }
+        .productpage__top__details__sizes--choose {
+          font-weight: 700;
+          font-size: 2.22rem; }
+        .productpage__top__details__sizes--cards {
+          display: flex;
+          flex-wrap: wrap; }
+          .productpage__top__details__sizes--cards-selected {
+            border: 1px solid #ee2761; }
+          .productpage__top__details__sizes--cards-unselected {
+            border: 1px solid transparent; }
+          .productpage__top__details__sizes--cards span {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 1rem;
+            height: 5rem;
+            width: 5rem;
+            border-radius: .5rem;
+            margin-right: 1rem;
+            background: rgba(30, 39, 46, 0.8);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer; }
+    .productpage__top__btnparent button {
+      width: 100%;
+      height: 6rem;
+      color: #fff;
+      background: #00AA5B;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: flex;
+      padding-top: 1px;
+      justify-content: center;
+      transition: all ease-in-out .1s; }
+      .productpage__top__btnparent button:hover {
+        background: #218c74; }
 
 .shirtshoodiescard {
   width: 40rem;

@@ -1,0 +1,201 @@
+.productpage {
+  position: relative;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10rem;
+
+  &__top {
+    display: flex;
+
+    @media only screen and (max-width: 64em) {  
+      flex-direction: column
+    }
+
+    &__photos {
+      display: flex;
+      flex-direction: column;
+      margin-right: 2rem;
+
+      @media only screen and (max-width: 64em) {  
+        flex-direction: initial;
+      }
+
+      & figure {
+        cursor: pointer;
+        height: 10rem;
+        width: 10rem;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        border-radius: .5rem;
+        transition: all ease-in-out .1s;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      &--notcurrent {
+        border: 1px solid transparent;
+      }
+
+      &--current {
+        border: 1px solid #ee2761;
+      }
+    }
+
+    &__display {
+      position: relative;
+      height: 85rem;
+      width: 70rem;
+      overflow: hidden;
+      margin-right: 2rem;
+
+      @media only screen and (max-width: 77em) {  
+        height: 80rem;
+        width: 60rem;
+      }
+
+      @media only screen and (max-width: 71em) {  
+        height: 70rem;
+        width: 50rem;
+      }
+
+      @media only screen and (max-width: 64em) {  
+        width: 80vw
+      }
+
+      @media only screen and (max-width: 37.5em) {  
+        width: 90vw;
+        height: 60rem;
+      }
+
+      @media only screen and (max-width: 30em) {  
+        height: 50rem;
+      }
+
+      & figure {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+    }
+
+    &__details {    
+      background: rgba(236, 240, 241,.4);
+      padding: 2rem;
+      width: 55rem;
+
+      @media only screen and (max-width: 86em) {  
+        height: 70rem;
+        width: 40rem;
+      }
+      
+      @media only screen and (max-width: 66.5em) {  
+        height: 70rem;
+        width: 35rem;
+      } 
+
+      @media only screen and (max-width: 64em) {  
+        width: 80vw;
+        margin-top: 1rem;
+        height: 40rem;
+      }
+
+      @media only screen and (max-width: 37.5em) {  
+        width: 90vw;
+      }
+
+      & h2 {
+        font-size: 2.55rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        overflow: hidden;
+      }
+
+      &--price {
+        font-size: 2.33rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+        color: #555;
+      }
+
+      &__sizes {
+        margin-bottom: 2rem;
+        
+        &--choose {
+          font-weight: 700;
+          font-size: 2.22rem;
+        }
+
+        &--cards {
+          display: flex;
+          flex-wrap: wrap;
+
+          &-selected {
+            border: 1px solid #ee2761;
+          }
+
+          &-unselected {
+            border: 1px solid transparent;
+          }
+
+          & span {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 1rem;
+            height: 5rem;
+            width: 5rem;
+            border-radius: .5rem;
+            margin-right: 1rem;
+            background: rgba(30, 39, 46,.8);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    &__btnparent {
+
+      & button {
+        width: 100%;
+        height: 6rem;
+        color: #fff;
+        background: #00AA5B;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: flex;
+        padding-top: 1px;
+        justify-content: center;
+        transition: all ease-in-out .1s;
+
+        &:hover {
+          background: rgba(33, 140, 116,1.0);
+        }
+      }
+    }
+  }
+}

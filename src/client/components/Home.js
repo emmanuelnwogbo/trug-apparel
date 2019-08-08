@@ -10,6 +10,7 @@ import SideNav from './SideNav';
 import Display from './Display';
 
 import ProductsGrid from './ProductsGrid';
+import ProductPage from './ProductPage';
 import Footer from './Footer';
 
 class Home extends Component {
@@ -23,8 +24,8 @@ class Home extends Component {
       <div className={'home'}>
         <Header />
         <SideNav />
-        <Route exact path="/" component={HomeContent} />
-        <Route exact path="/hi" component={() => 'hi'} />
+        <Route exact path="/" component={ProductPage/*HomeContent*/} />
+        <Route exact path="/hi" component={ProductsGrid} />
         <Footer />
       </div>
     )
