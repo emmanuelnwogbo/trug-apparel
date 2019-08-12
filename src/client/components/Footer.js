@@ -44,7 +44,7 @@ class Footer extends Component {
   }
 
   componentDidMount() {
-    this.setState({ date: moment !== undefined ? moment(new Date()).format('YYYY') : '' })
+    //this.setState({ date: moment !== undefined ? moment(new Date()).format('YYYY') : '' })
   }
 
   render() {

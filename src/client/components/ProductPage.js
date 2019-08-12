@@ -1,5 +1,53 @@
 import React, { Component } from 'react';
 
+const ProductDetails = ({ details }) => {
+
+  return (
+    <div className={'productpage__bottom'}>
+      {
+        details.map(detail => {
+          return (
+            <div className={'productpage__bottom__detail'} key={detail}>
+              <h2>{'BRAND'}</h2>
+              <p>
+                {
+                  'ASOS and LIFE IS BEAUTIFUL have linked up to create a collection that celebrates connection, joy and creativity. Held in Downtown Las Vegas, LIFE IS BEAUTIFUL festival brings together music, art, comedy, ideas and fashion to inspire and empower an ever-growing community. Shop our edit for vests, shirts, accessories and more.'
+                }
+              </p>
+            </div>
+          )
+        })
+      }
+    </div>
+  )
+}
+
+const SimilarDetails = ({ similarProducts }) => {
+
+  return (
+    <div className={'productpage__similar'}>
+      <h2>You might also like</h2>
+      <div className={'productpage__similar__content'}>
+      {
+        similarProducts.map(similarProduct => {
+          return (
+            <div className={'productpage__similar__card'} key={similarProduct}>
+              <figure>
+                <img src={similarProduct}/>
+              </figure>   
+              <div className={'productpage__similar__card--details'}>
+                <div className={'productpage__similar__card--details-name'}>Premier Cropped Skinny Jean</div>
+                <div className={'productpage__similar__card--details-price'}>$400.00</div>
+              </div>                       
+            </div>
+          )
+        })
+      }      
+      </div>
+    </div>
+  )
+}
+
 class ProductPage extends Component {
   constructor() {
     super();
@@ -87,6 +135,8 @@ class ProductPage extends Component {
             </div>
           </div>
         </div>
+        <ProductDetails details={[1, 2, 3, 4]}/>
+        <SimilarDetails similarProducts={['./imgs/unsplash5.jpg', './imgs/unsplash16.jpg', './imgs/unsplash11.jpg', './imgs/unsplash7.jpg']}/>
       </div>
     )
   }

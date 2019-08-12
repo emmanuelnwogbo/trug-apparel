@@ -3,11 +3,8 @@ import { Route } from 'react-router-dom';
 
 import Header from './Header';
 import HomeContent from './HomeContent';
-import Jumbotron from './Jumbotron';
 import MobileMast from './MobileMast';
-import Announcements from './Announcements';
 import SideNav from './SideNav';
-import Display from './Display';
 
 import ProductsGrid from './ProductsGrid';
 import ProductPage from './ProductPage';
@@ -24,8 +21,8 @@ class Home extends Component {
       <div className={'home'}>
         <Header />
         <SideNav />
-        <Route exact path="/" component={ProductPage/*HomeContent*/} />
-        <Route exact path="/hi" component={ProductsGrid} />
+        <Route exact path="/" component={HomeContent} />
+        <Route exact path="/search" component={ProductsGrid} />
         <Footer />
       </div>
     )

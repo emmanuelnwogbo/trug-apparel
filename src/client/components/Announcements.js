@@ -7,8 +7,7 @@ class Announcements extends Component {
       promotions: [
         "./imgs/unsplash7.jpg",
         "./imgs/unsplash16.jpg",
-        "./imgs/unsplash11.jpg",
-        "./imgs/unsplash13.jpg"
+        "./imgs/unsplash11.jpg"
       ],
       firstPromotionSlideContent: [
         "./imgs/unsplash15.jpg",
@@ -52,7 +51,7 @@ class Announcements extends Component {
 
   renderPromotions () {
     return this.state.promotions.map(promotion => {
-      if (this.state.promotions.indexOf(promotion) === 0) {
+      if (this.state.promotions.indexOf(promotion) === 1) {
         return (
           <div key={promotion} className={'announcements__fig'}>
             {this.renderFirstPromotionSlide()}

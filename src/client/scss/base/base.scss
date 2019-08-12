@@ -10,32 +10,24 @@ html {
   box-sizing: border-box;
   font-size: 60%;
 
-  @media only screen and (max-width: 64em) {
-    font-size: 65%;
-  }
-
-  @media only screen and (max-width: 38em) {
-    font-size: 62%;
-  }
-
-  @media only screen and (max-width: 30em) {
+  @media only screen and (max-width: 94em) {
     font-size: 50%;
   }
 
-  @media only screen and (max-width: 26em) {
+  @media only screen and (max-width: 64em) {
+    font-size: 60%;
+  }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: 30em) {
     font-size: 40%;
   }
 
-  @media only screen and (max-width: 23em) {
-    font-size: 35%;
-  }
-
-  @media only screen and (min-width: 2500px) {
-    font-size: 75%;
-  }
-
-  @media only screen and (min-width: 2900px) {
-    font-size: 96%;
+  @media only screen and (min-width: 156.25em) {
+    font-size: 80%;
   }
 }
 

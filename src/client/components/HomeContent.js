@@ -1,16 +1,13 @@
 import React from 'react';
 
-
-import Jumbotron from './Jumbotron';
-import MobileMast from './MobileMast';
+import Mast from './Mast';
 import Announcements from './Announcements';
 import Display from './Display';
 
 const HomeContent = () => {
   return (
     <div>
-      <Jumbotron />
-      <MobileMast />
+      <Mast />
       <Announcements />
       <Display />    
     </div>

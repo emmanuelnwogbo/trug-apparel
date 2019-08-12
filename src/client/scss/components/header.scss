@@ -1,217 +1,44 @@
 .header { 
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 2rem 8rem;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1.7rem;
-  font-weight: 500;
-  color: #000000;//#0a0918; 
   background: #fff;
-  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  z-index: 4000;
+  justify-content: center;
+  align-items: center;
 
-  &__dropdown {
-    position: absolute;
-    top: 45%;
-    right: 4%;
-    width: 33rem;
-    background: #fff;
-    color: #000000;
+  @media only screen and (max-width: 37.5em) {
+    display: none;
+  }
+
+  &__name {
     display: flex;
-    flex-direction: column;
-    border: .1px solid #000000;
-    transform: translateY(-150%);
-    transition: all .2s ease-in;
-
-    &:hover {
-      transform: translateY(0);
-    }
-
-    &--item {
-      display: flex;
-      width: 100%;
-      padding: 2rem;
-      position: relative;
-      cursor: pointer;
-      transition: all .1s ease-in;
-
-      &-signinjoin {
-        background: #dfe6e9;
-
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: 18%;
-          left: 24%;
-          width: 2px;
-          height: 57%;
-          background: #000000;
-          opacity: .5;
-        }
-      }
-
-      &-notsigninjoin {
-        transition: all .1s ease-in;
-
-        &::before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 1px;
-          background: #000000;
-          opacity: .3;
-        }
-
-        &:hover {
-          color: #ee2761;
-        }
-      }
-
-      & span {
-        text-decoration: underline;
-        cursor: pointer;
-        transition: all .1s ease-in;
-
-        &:hover {
-          color: #ee2761;
-        }
-      }
-
-      & span:nth-child(1) {
-        display: inline-block;
-        margin-right: 2rem;
-      }
-    }
-  }
-
-  @media only screen and (max-width: 64em) {
-    //background: #000000;
-    padding-left: 13rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    padding: 2rem 4rem;
-    padding-left: 11rem;
-  }
-
-  @media only screen and (max-width: 38em) {
-    padding: 2rem;
-    padding-left: 10rem;
-  }
-
-  &::before {
-    top: 0;
-    position: absolute;
-    left: 0;
-    background: #fff;
-    content: '';
-    height: 57%;
-    width: 100%;
-    z-index: -1;
-  }
-
-
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-
-    @media only screen and (max-width: 64em) {
-      height: 7rem;
-      align-items: center;
-      transform: translateY(10px);
-    }
-
-    @media only screen and (max-width: 38em) {
-      height: 5rem;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;    
-      bottom: 42%;
-      left: 0;
-      width: 100%;
-      height: 1.5px;
-      background: #0a0918;
-      opacity: .1;
-
-      @media only screen and (max-width: 64em) {
-        opacity: 0;
-      }
-    }
-
-    &--name {
-      font-size: 2.5rem;
-      font-weight: 700;
-      cursor: pointer;
-
-      @media only screen and (max-width: 64em) {
-        font-size: 3rem;
-      }
-    }
-
-    &--user {
-      display: flex;
-      align-items: center;
-
-      &-item { 
-        margin-left: 4rem;
-        padding: 1rem 0;
-        cursor: pointer;
-
-        &:nth-child(1) {
-
-          &:hover ~ .header__dropdown {
-            transform: translateY(0)
-          }
-        }
-
-        & svg {
-          height: 2.5rem;
-          width: 2.5rem;
-          fill: #000000;
-
-          @media only screen and (max-width: 64em) {
-            height: 4rem;
-            width: 4rem;
-          }
-
-          @media only screen and (max-width: 20em) {
-            height: 3rem;
-            width: 3rem;
-          }
-        }
-      }
-    }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 1rem;
   }
 
   &__menu {
     display: flex;
-    align-items: center;
-    height: 3rem;
-    padding: 1rem 0;
-    transition: all .2s ease-in;
     justify-content: center;
-
-    @media only screen and (max-width: 64em) {
-      display: none;
-    }
+    align-items: center;
+    font-size: 2rem;
+    padding-top: 1rem;
 
     & span {
       display: inline-block;
-      margin-right: 3rem;
-      transform: translateY(10px);
+      margin: 0 3rem;
       cursor: pointer;
-      color: #192a56;
-      
+      transition: transform .5s cubic-bezier(.25, 0, .1, 1);
+
       &:hover {
-        color: #ee2761;
+        color: #ee2761
       }
     }
   }

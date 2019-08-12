@@ -1,0 +1,19 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+
+  & input {
+    font-size: 2rem;
+    outline: none;
+    border: 1px solid #000000;
+    height: 6rem;
+    width: 70vw;
+    border-right: none;
+    padding: 1rem 1.5rem;
+    background: rgba(24, 44, 97, 0.3);
+    border: none;
+    color: #000000;
+  }
+}
