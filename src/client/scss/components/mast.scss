@@ -10,7 +10,7 @@
 
   &__slider {
     margin: 0 auto;
-    width: 50vw;
+    width: 66%;
     display: flex;
     position: relative;
 
@@ -26,7 +26,7 @@
   & article {
     position: absolute;
     height: 100%;
-    width: 50vw;
+    width: 100%;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -59,7 +59,7 @@
     &[data-active] {
       z-index: 3;
       height: 100%;
-      width: 50vw;
+      width: 100%;
       transform: translateY(0) translateX(0);
       border: solid 3px #111;
       overflow: hidden;
