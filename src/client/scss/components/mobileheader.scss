@@ -21,4 +21,56 @@
     padding-top: 1rem;
     height: 9rem;
   }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--cart {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 9rem;
+      cursor: pointer;
+      display: flex;
+      margin: 0 3rem;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.5s cubic-bezier(0.25, 0, 0.1, 1);
+
+      & span {
+        position: absolute;
+        top: 7%;
+        right: 0;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: #ee2761;
+        font-weight: 700;
+        transform: translateX(13px);
+      }
+
+      & svg {
+        height: 5rem;
+        width: 5rem;
+        fill: #111;
+      }
+    }
+
+    &--login {
+      position: relative;
+      display: inline-block;
+      margin: 0 3rem;
+      cursor: pointer;
+      opacity: .7;
+      transition: transform .5s cubic-bezier(.25, 0, .1, 1);
+      font-weight: 700;
+      opacity: 1;
+    }
+  }
 }

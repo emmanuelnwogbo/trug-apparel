@@ -10,8 +10,13 @@ class Header extends Component {
         'Shirts',
         'Accessories',
         'Trousers',
-        'Hoods',
-        'Prints'
+        'Hoodies',
+        'Prints',
+        'Log in',
+        {
+          type: 'sprite',
+          sprite: "./imgs/sprite.svg#icon-cart"
+        }
       ]
     }
     this.renderMenuItems = this.renderMenuItems.bind(this);
@@ -19,8 +24,25 @@ class Header extends Component {
 
   renderMenuItems() {
     return this.state.menuItems.map(item => {
+      if (item.type) {
+        return (
+          <div key={item} className={'header__menu--cart'}>
+            <span>{'0'}</span>
+            <svg>
+              <use xlinkHref={item.sprite}/>
+            </svg>
+          </div>
+        )
+      }
+
+      if (item === 'Log in') {
+        return (
+          <span key={item} className={'header__menu--login'}>{item}</span>
+        )
+      }
+
       return (
-        <span key={item}>{item}</span>
+        <span key={item} className={'header__menu--item'}>{item}</span>
       )
     })
   }

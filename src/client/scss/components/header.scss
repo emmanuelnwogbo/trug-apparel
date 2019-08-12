@@ -31,15 +31,56 @@
     font-size: 2rem;
     padding-top: 1rem;
 
-    & span {
+    &--cart {
+      position: relative;
+      cursor: pointer;
+      margin: 0 3rem;
+      transition: transform .5s cubic-bezier(.25, 0, .1, 1);
+
+      & span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: #ee2761;
+        font-weight: 700;    
+        transform: translate(20px, -10px);
+      }
+
+      & svg {
+        height: 3rem;
+        width: 3rem;
+        fill: #111;
+      }
+    }
+
+    &--item {
       display: inline-block;
       margin: 0 3rem;
       cursor: pointer;
+      opacity: .7;
       transition: transform .5s cubic-bezier(.25, 0, .1, 1);
 
       &:hover {
         color: #ee2761
       }
+    }
+
+    &--login {
+      position: relative;
+      display: inline-block;
+      margin: 0 3rem;
+      cursor: pointer;
+      opacity: .7;
+      transition: transform .5s cubic-bezier(.25, 0, .1, 1);
+      font-weight: 700;
+      opacity: 1;
     }
   }
 }

@@ -9,8 +9,9 @@ class SideNav extends Component {
         'Shirts',
         'Accessories',
         'Trousers',
-        'Hoods',
-        'Prints'
+        'Hoodies',
+        'Prints',
+        'Log in'
       ]
     };
     this.changeNavState = this.changeNavState.bind(this);
@@ -48,6 +49,11 @@ class SideNav extends Component {
 
   renderMenu () {
     return this.state.menuLabels.map(label => {
+      if (label === 'Log in') {
+        return (
+          <div className={' sidenav__menu--btn sidenav__menu--btn-login'} key={label}><p>{label}</p></div>
+        )       
+      }
       return (
         <div className={'sidenav__menu--btn'} key={label}><p>{label}</p></div>
       )

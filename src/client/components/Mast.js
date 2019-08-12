@@ -36,7 +36,7 @@ class Mast extends Component {
             }
           })
         }, 2500);
-      }      
+      } 
      });
    }
 
