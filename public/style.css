@@ -80,6 +80,27 @@ body {
       .header__menu span:hover {
         color: #ee2761; }
 
+.mobileheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: none;
+  z-index: 40; }
+  @media only screen and (max-width: 37.5em) {
+    .mobileheader {
+      display: block; } }
+  .mobileheader__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 1rem;
+    height: 9rem; }
+
 .jumbotron {
   position: relative;
   height: 69rem;
@@ -499,19 +520,25 @@ body {
   .sidenav__btn--open {
     position: absolute;
     top: 0;
-    right: -20%;
+    right: -13%;
     display: flex;
     flex-direction: column;
-    padding: 4rem 0; }
-    @media only screen and (max-width: 38em) {
+    padding: 3rem 0; }
+    @media only screen and (max-width: 30em) {
       .sidenav__btn--open {
-        padding: 3rem 0; } }
-    @media only screen and (max-width: 38em) {
-      .sidenav__btn--open {
-        padding: 3rem 0; } }
+        right: -12%; } }
     @media only screen and (max-width: 26em) {
       .sidenav__btn--open {
-        padding: 3.5rem 0; } }
+        right: -13%; } }
+    @media only screen and (max-width: 24em) {
+      .sidenav__btn--open {
+        right: -14%; } }
+    @media only screen and (max-width: 22.5em) {
+      .sidenav__btn--open {
+        right: -15%; } }
+    @media only screen and (max-width: 20em) {
+      .sidenav__btn--open {
+        right: -17%; } }
     .sidenav__btn--open span {
       display: inline-block;
       height: .5rem;
@@ -522,19 +549,26 @@ body {
   .sidenav__btn--close {
     position: absolute;
     top: 0;
-    right: -20%;
+    right: -13%;
     display: flex;
     flex-direction: column;
-    padding: 4rem 0; }
-    @media only screen and (max-width: 38em) {
+    padding: 3rem 0; }
+    @media only screen and (max-width: 30em) {
       .sidenav__btn--close {
-        padding: 3rem 0; } }
-    @media only screen and (max-width: 38em) {
-      .sidenav__btn--close {
-        padding: 3rem 0; } }
+        padding: 3rem 0;
+        right: -12%; } }
     @media only screen and (max-width: 26em) {
       .sidenav__btn--close {
-        padding: 3.5rem 0; } }
+        right: -13%; } }
+    @media only screen and (max-width: 24em) {
+      .sidenav__btn--close {
+        right: -14%; } }
+    @media only screen and (max-width: 22.5em) {
+      .sidenav__btn--close {
+        right: -15%; } }
+    @media only screen and (max-width: 20em) {
+      .sidenav__btn--close {
+        right: -17%; } }
     .sidenav__btn--close span {
       display: inline-block;
       height: .5rem;
@@ -623,6 +657,13 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem 0; }
+  @media only screen and (max-width: 64em) {
+    .search {
+      padding: 1rem;
+      margin: .5rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .search {
+      padding: 0 1rem; } }
   .search input {
     font-size: 2rem;
     outline: none;
@@ -634,6 +675,13 @@ body {
     background: rgba(24, 44, 97, 0.3);
     border: none;
     color: #000000; }
+    @media only screen and (max-width: 64em) {
+      .search input {
+        width: 97vw;
+        height: 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .search input {
+        width: 100vw; } }
 
 .productgrid {
   position: relative;

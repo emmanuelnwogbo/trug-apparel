@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
 import Header from './Header';
+import MobileHeader from './MobileHeader'
 import HomeContent from './HomeContent';
-import MobileMast from './MobileMast';
 import SideNav from './SideNav';
 
 import ProductsGrid from './ProductsGrid';
@@ -20,6 +20,7 @@ class Home extends Component {
     return (
       <div className={'home'}>
         <Header />
+        <MobileHeader />
         <SideNav />
         <Route exact path="/" component={HomeContent} />
         <Route exact path="/search" component={ProductsGrid} />

@@ -1,0 +1,24 @@
+.mobileheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: none;
+  z-index: 40;
+
+  @media only screen and (max-width: 37.5em) {
+    display: block;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 1rem;
+    height: 9rem;
+  }
+}

@@ -31,21 +31,29 @@
   &__btn--open {
     position: absolute;
     top: 0;
-    right: -20%;
+    right: -13%;
     display: flex;
     flex-direction: column;
-    padding: 4rem 0;
+    padding: 3rem 0;
     
-    @media only screen and (max-width: 38em) {
-      padding: 3rem 0;
-    }
-
-    @media only screen and (max-width: 38em) {
-      padding: 3rem 0;
+    @media only screen and (max-width: 30em) {
+      right: -12%;
     }
 
     @media only screen and (max-width: 26em) {
-      padding: 3.5rem 0;
+      right: -13%;
+    }
+
+    @media only screen and (max-width: 24em) {
+      right: -14%;
+    }
+
+    @media only screen and (max-width: 22.5em) {
+      right: -15%;
+    }
+
+    @media only screen and (max-width: 20em) {
+      right: -17%;
     }
 
     & span {
@@ -61,21 +69,30 @@
   &__btn--close {
     position: absolute;
     top: 0;
-    right: -20%;
+    right: -13%;
     display: flex;
     flex-direction: column;
-    padding: 4rem 0;
+    padding: 3rem 0;
     
-    @media only screen and (max-width: 38em) {
+    @media only screen and (max-width: 30em) {
       padding: 3rem 0;
-    }
-
-    @media only screen and (max-width: 38em) {
-      padding: 3rem 0;
+      right: -12%;
     }
 
     @media only screen and (max-width: 26em) {
-      padding: 3.5rem 0;
+      right: -13%;
+    }
+
+    @media only screen and (max-width: 24em) {
+      right: -14%;
+    }
+
+    @media only screen and (max-width: 22.5em) {
+      right: -15%;
+    }
+
+    @media only screen and (max-width: 20em) {
+      right: -17%;
     }
 
     & span {
