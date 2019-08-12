@@ -46,8 +46,7 @@ class ProductsGrid extends Component {
     return (
       <div className={'productgrid'}>
         <div className={'productgrid__header'}>
-          <input />
-          <span>Start Shopping</span>
+          <p className={'productgrid__header--results'}>1,300 results for Shirts</p>
         </div>
         <div className={'productgrid__sort'}></div>
         <div className={'productgrid__section productgrid__container'}>
