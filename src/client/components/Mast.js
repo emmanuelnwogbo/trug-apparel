@@ -12,12 +12,12 @@ class Mast extends Component {
 
    componentDidMount() {
      this.setState({ categories: [
-       "./imgs/unsplash15.jpg",
-       "./imgs/unsplash2.jpg",
-       "./imgs/unsplash3.jpg",
-       "./imgs/unsplash4.jpg",
-       "./imgs/unsplash11.jpg",
-        "./imgs/unsplash13.jpg"
+       "https://images.pexels.com/photos/2698918/pexels-photo-2698918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+       "https://images.pexels.com/photos/2479827/pexels-photo-2479827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+       "https://images.pexels.com/photos/2364530/pexels-photo-2364530.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+       "https://images.pexels.com/photos/1820993/pexels-photo-1820993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+       "https://images.pexels.com/photos/1874866/pexels-photo-1874866.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+       "https://images.pexels.com/photos/2097629/pexels-photo-2097629.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
      ]}, () => {
       if (this.state.categories !== null) {
         const trimVal = this.state.categories.length-1;

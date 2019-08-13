@@ -419,10 +419,13 @@ body {
     .mast article[data-active] + article {
       z-index: 2; }
     .mast article figure {
+      position: relative;
       width: 100%;
       height: 100%;
       cursor: pointer;
-      overflow: hidden; }
+      overflow: hidden;
+      background-size: cover;
+      background-position: center; }
       .mast article figure img {
         width: 100%;
         height: 100%;

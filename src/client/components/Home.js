@@ -22,7 +22,7 @@ class Home extends Component {
         <Header />
         <MobileHeader />
         <SideNav />
-        <Route exact path="/" component={ProductsGrid/*HomeContent*/} />
+        <Route exact path="/" component={HomeContent} />
         <Route exact path="/search" component={ProductsGrid} />
         <Footer />
       </div>
