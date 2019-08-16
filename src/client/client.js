@@ -10,7 +10,8 @@ const client = contentful.createClient({
 client.getEntries().then(entries => {
   entries.items.forEach(entry => {
     if(entry.fields) {
-      console.log(entry.fields.category)
+      console.log(entry.fields.category);
+      console.log(entry.fields)
     }
   })
 })
