@@ -1,0 +1,68 @@
+.grid {
+  display: grid;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rem;
+  grid-template-columns: 14vw 86vw;
+
+  &__container {
+    grid-column: 2 / -1;
+
+    &__content {
+      display: grid;
+      grid-gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(50rem, 50rem));
+      padding: 3rem 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &__product {
+    padding: 0 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    width: 45rem;
+    height: 70rem;
+    transition: all .4s ease-in;
+
+    &__figure {
+      height: 85%;
+      width: 100%;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    &:nth-child(even) {
+      height: 60rem;
+      padding: 2rem;
+      background: #fff;
+    }
+
+    &:nth-child(2) {
+      transform: translateY(-5rem);
+    }
+
+    &__details {
+      padding: 2rem 0;
+
+      &--name {
+        font-weight: 900;
+        font-size: 1.77rem;
+      }
+
+      &--price {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}

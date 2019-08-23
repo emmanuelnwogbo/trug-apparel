@@ -1,76 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-class SideNav extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      open: `translateX(-100%)`,
-      menuLabels: [
-        'Shirts',
-        'Accessories',
-        'Trousers',
-        'Hoodies',
-        'Prints',
-        'Log in'
-      ]
-    };
-    this.changeNavState = this.changeNavState.bind(this);
-    this.returnBtn = this.returnBtn.bind(this);
-    this.renderMenu = this.renderMenu.bind(this);
-  }
+const Sidenav = ({ filters }) => {
 
-  returnBtn () {
-    if (this.state.open === `translateX(0)`) {
+  const renderFilters = () => {
+    return filters ? filters.map(filter => {
       return (
-        <div className={'sidenav__btn--close'} onClick={this.changeNavState}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <span className={'sidenav__filter'}>{filter}</span>
       )
-    }
-
-    return (
-      <div className={'sidenav__btn--open'} onClick={this.changeNavState}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    )
+    }) : ""
   }
 
-  changeNavState () {
-    if (this.state.open === `translateX(0)`) {
-      return this.setState({ open: `translateX(-100%)` });
-    }
-
-    this.setState({ open: `translateX(0)` });
-  }
-
-  renderMenu () {
-    return this.state.menuLabels.map(label => {
-      if (label === 'Log in') {
-        return (
-          <div className={' sidenav__menu--btn sidenav__menu--btn-login'} key={label}><p>{label}</p></div>
-        )       
-      }
-      return (
-        <div className={'sidenav__menu--btn'} key={label}><p>{label}</p></div>
-      )
-    })
-  }
-
-  render() {
-    return (
-      <div className={'sidenav'} style={{transform: this.state.open}}>
-        {this.state.open === 'translateX(0)' ? <div className={'sidenav--overlay'} onClick={this.changeNavState}></div> : ''}
-        {this.returnBtn()}
-        <div className={'sidenav__menu'}>
-          {this.renderMenu()}
+  return (
+    <div className={'sidenav'}>
+      <div className={'sidenav__name'}><p>Trugapparel</p></div>
+      <div className={'sidenav__filters'}>
+        <h1 className={'sidenav__filters--h1'}>Filters</h1>
+        <div className={'sidenav__filters--menu'}>
+          {renderFilters()}
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
-export default SideNav;
+export default Sidenav;

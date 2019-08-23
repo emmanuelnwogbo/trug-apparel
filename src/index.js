@@ -1,5 +1,7 @@
 import express from 'express';
 import renderer from './helpers/renderer';
+import createStore from './helpers/createStore';
+import routes from './routes';
 const app = express();
 /*
 const express = require('express');
@@ -10,7 +12,9 @@ const app = express();
 */
 app.use(express.static('public'));
 app.get('*', (req, res) => {
-  res.send(renderer(req));
+  console.log('status here', res.status, routes);
+  const store = createStore();
+  res.send(renderer(req, store));
 });
 
 const PORT = process.env.PORT || 3000;

@@ -1,14 +1,18 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import Home from '../client/components/Home';
 
-export default (req) => {
+export default (req, store) => {
   const content = renderToString(
-    <StaticRouter location={req.path} context={{}}>
-      <Home />
-    </StaticRouter>
+    <Provider store={store}>
+      <StaticRouter location={req.path} context={{}}>
+        <Home />
+      </StaticRouter>    
+    </Provider>
   );
+
   return `
     <html>
       <head>

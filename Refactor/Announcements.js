@@ -88,7 +88,8 @@ class Announcements extends Component {
   
   render() {
     return (
-      <div className={'announcements'}>
+      <div className={'announcements test'}>
+        <link rel="stylesheet" type="text/css" href="./test.css"></link>
         {this.renderPromotions()}
       </div>
     )

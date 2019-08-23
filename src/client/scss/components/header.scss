@@ -1,86 +1,70 @@
-.header { 
+.header {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  height: 10rem;
   background: #fff;
   display: flex;
-  flex-direction: column;
-  z-index: 4000;
-  justify-content: center;
   align-items: center;
+  width: 86vw;
+  padding: 0 3rem;
+  z-index: 1000;
 
-  @media only screen and (max-width: 37.5em) {
-    display: none;
+  &__search {
+    margin-right: 5rem;
+
+    &--input {
+      height: 6rem;
+      width: 55vw;
+      outline: none;
+      border: none;
+      padding: 1rem;
+      font-size: 1.9rem;
+      transition: all ease-in .2s;
+      box-shadow: 0 0rem 0.3rem rgba(0, 0, 0, 0.4);
+
+      &::placeholder {
+        color: #111;
+        font-weight: 700;
+        font-size: 1.9rem;
+        opacity: .4
+      }
+    }
   }
 
-  &__name {
+  &__categories {
+    display: flex;
+    align-items: center;
+
+    &--category {
+      display: inline-block;
+      margin-right: 6rem;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      font-weight: 7;
+      cursor: pointer;
+      text-decoration: none;
+      color: #111;
+      opacity: .8;
+      font-weight: 800;
+    }
+  }
+
+  &__cart {
+    position: absolute;
+    right: 0;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-weight: 700;
-    font-size: 3rem;
-    padding-top: 1rem;
-  }
+    width: 9rem;
+    cursor: pointer;
 
-  &__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    padding-top: 1rem;
-
-    &--cart {
-      position: relative;
-      cursor: pointer;
-      margin: 0 3rem;
-      transition: transform .5s cubic-bezier(.25, 0, .1, 1);
-
-      & span {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 3rem;
-        width: 3rem;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        background: #ee2761;
-        font-weight: 700;    
-        transform: translate(20px, -10px);
-      }
-
-      & svg {
-        height: 3rem;
-        width: 3rem;
-        fill: #111;
-      }
-    }
-
-    &--item {
-      display: inline-block;
-      margin: 0 3rem;
-      cursor: pointer;
-      opacity: .7;
-      transition: transform .5s cubic-bezier(.25, 0, .1, 1);
-
-      &:hover {
-        color: #ee2761
-      }
-    }
-
-    &--login {
-      position: relative;
-      display: inline-block;
-      margin: 0 3rem;
-      cursor: pointer;
-      opacity: .7;
-      transition: transform .5s cubic-bezier(.25, 0, .1, 1);
-      font-weight: 700;
-      opacity: 1;
+    & svg {
+      height: 3rem;
+      width: 3rem;
+      fill: #111;
+      opacity: .9;
     }
   }
 }
