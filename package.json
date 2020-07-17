@@ -35,7 +35,7 @@
     "contentful": "^7.9.1",
     "express": "^4.17.1",
     "express-http-proxy": "1.0.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "nodemon": "^1.19.1",
     "npm-run-all": "4.1.1",
     "react": "16.0.0",
